@@ -14,7 +14,7 @@ An aim lab for esports players to get on with a challenge
 
 # Instructions - 
 
-**1.** There will be 30 dots  in total with a delay of 1.4 seconds **(default)**
-**2.** In Medium mode, the delay will be 1 second
+**1.** There will be 30 dots  in total with a delay of 1.4 seconds **(default)**/
+**2.** In Medium mode, the delay will be 1 second/
 **3.** In Hard mode, the delay will be 0.6 seconds
 
