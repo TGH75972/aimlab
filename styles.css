@@ -5,26 +5,29 @@ body {
     padding: 0;
 }
 
+.spacer {
+    height: 500px; 
+}
+
 header {
     background-color: #000000;
-    color: #fff;
-    font-size: 20px;
+    color: yellow;
+    font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
+    width: 100%;
 }
 
 main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 80vh;
-    position: relative;
 }
 
 #gameArea {
-    position: absolute;
-    top: 100px;
     width: 800px;
     height: 300px;
     background-color: #302f2f;
@@ -34,69 +37,146 @@ main {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    z-index: 0;
+    position: relative; 
 }
 
 #controls {
-    position: absolute;
-    width: 200px;
     text-align: center;
+    margin-top: 20px;
 }
 
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
 
 footer {
     background-color: #000000;
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    position: fixed;
     width: 100%;
+    position: fixed;
     bottom: 0;
 }
 
 mark {
-    background-color: yellow;
+    background-color: white;
     color: black;
     border-radius: 10px;
     border: 2px solid white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 5px;
     font-weight: bold;
     font-size: 30px;
 }
 
 #eye {
     position: absolute;
-    font-size: 75px;
-    top: 100px;
-    left: 625px;
-}
-
-#eye:hover{
+    top: 630px;
+    left: 620px;
+    font-size: 80px;
     cursor: pointer;
+    display: block;
 }
 
 .dot {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     background-color: red;
     border: 2px solid white;
     border-radius: 50%;
     position: absolute;
     cursor: pointer;
-    z-index: 10;
 }
 
 #sc {
-    position: absolute;
-    top: -360px;
-    left: -250px;
     background-color: white;
     color: black;
     border-radius: 10px;
     padding: 5px;
-    margin-right: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     font-size: 25px;
 }
+
+#easyButton, #mediumButton, #hardButton{
+    left: 400px;
+    top: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    background-color: aquamarine;
+    color: black;
+}
+
+#hardButton{
+    top: 300px;
+}
+
+#easyButton{
+    top: 100px;
+}
+
+#gmode{
+    top: 200px;
+    left: 230px;
+    position: absolute;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+
+#display1, #display2{
+    position: absolute;
+    top: 85px  ;
+    left: 400px;
+    height: 300px;
+    width: 200px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+#display2{
+    left: 1000px;
+}
+
+#dc{
+    top: 200px;
+    left: 785px;
+    position: absolute;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+
+#redButton, #yellowButton, #greenButton{
+    left: 1000px;
+    top: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    background-color: red;
+    color: black;
+}
+
+#yellowButton{
+    top: 300px;
+    background-color: yellow;
+}
+
+#greenButton{
+    top: 100px;
+    background-color: greenyellow;
+}
+
